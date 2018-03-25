@@ -1,10 +1,12 @@
 import numpy as np
+import networkx as nx
+
 
 app = "link_prediction"
-train_filename = "../../data/" + app + "/others" + "/CA-GrQc_undirected_train.txt"
-train_filename2 = "../../data/" + app + "/others" + "/US_largest500_airportnetwork.txt"
-test_filename = "../../data/link_prediction/CA-GrQc_test.txt"
-
+# train_filename = "../../data/" + app + "/others" + "/CA-GrQc_undirected_train.txt"
+train_filename = "../../data/" + app + "/others" + "/US_largest500_airportnetwork.txt"
+# test_filename = "../../data/link_prediction/CA-GrQc_test.txt"
+output_filename = "../../data/" + app + "/others" + "/US_largest500_airportnetwork.edgelist"
 def str_list_to_int(str_list):
     return [int(item) for item in str_list]
 
@@ -83,22 +85,33 @@ def read_emd(filename, n_node, n_embed):
 # print(n_node)
 # print(linked_nodes)
 
-n_node2, linked_nodes2 = read_edges(train_filename2, "")
+n_node, linked_nodes = read_edges(train_filename, "")
 
-# print(n_node2)
-# print(linked_nodes2)
+# convert txt to edgelist
+G = nx.Graph()
 
+file = open(train_filename)
+# output = open(output_filename)
+for line in file.readlines():
+    edge = line.split()
+    if len(edge) >= 2:
+        # output.write(edge[0] + edge[1])
+        G.add_edge(int(edge[0]), int(edge[1]))
+
+# print(G.neighbors(10))
+
+nx.write_edgelist(G, output_filename, data=False)
 random_state = np.random.randint(0, 100000)
-pretrain_emd_filename_d = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
-pretrain_emd_filename_g = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
+pretrain_emd_filename_d = "../../pre_train/" + app + "/p2p-Gnutella08.embeddings"
+pretrain_emd_filename_g = pretrain_emd_filename_d
 modes = ["dis", "gen"]
 emb_filenames = ["../../pre_train/" + app + "/CA-GrQc_" + modes[0] + "_" + str(random_state) + ".emb",
                  "../../pre_train/" + app + "/CA-GrQc_" +  modes[1] + "_" + str(random_state) + ".emb"]
 
 n_embed = 50
 n_node = 5242
-node_embed_init_d = read_emd(filename=pretrain_emd_filename_d, n_node=n_node,
-                                        n_embed=n_embed)
-node_embed_init_g = read_emd(filename=pretrain_emd_filename_g, n_node=n_node,
-                                        n_embed=n_embed)
-print(node_embed_init_d.shape)
+# node_embed_init_d = read_emd(filename=pretrain_emd_filename_d, n_node=n_node,
+#                                         n_embed=n_embed)
+# node_embed_init_g = read_emd(filename=pretrain_emd_filename_g, n_node=n_node,
+#                                         n_embed=n_embed)
+# print(node_embed_init_d.shape)
