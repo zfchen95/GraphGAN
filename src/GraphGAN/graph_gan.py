@@ -372,6 +372,7 @@ class GraphGan(object):
         with open(config.result_filename, mode="a+") as f:
             f.writelines(results)
 
+
 if __name__ == "__main__": 
     g_g = GraphGan()
     g_g.train_gan()

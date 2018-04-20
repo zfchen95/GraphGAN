@@ -85,33 +85,83 @@ def read_emd(filename, n_node, n_embed):
 # print(n_node)
 # print(linked_nodes)
 
-n_node, linked_nodes = read_edges(train_filename, "")
+# n_node, linked_nodes = read_edges(train_filename, "")
 
 # convert txt to edgelist
-G = nx.Graph()
-
-file = open(train_filename)
-# output = open(output_filename)
-for line in file.readlines():
-    edge = line.split()
-    if len(edge) >= 2:
-        # output.write(edge[0] + edge[1])
-        G.add_edge(int(edge[0]), int(edge[1]))
+# G = nx.Graph()
+#
+# file = open(train_filename)
+# # output = open(output_filename)
+# for line in file.readlines():
+#     edge = line.split()
+#     if len(edge) >= 2:
+#         # output.write(edge[0] + edge[1])
+#         G.add_edge(int(edge[0]), int(edge[1]))
 
 # print(G.neighbors(10))
 
-nx.write_edgelist(G, output_filename, data=False)
-random_state = np.random.randint(0, 100000)
-pretrain_emd_filename_d = "../../pre_train/" + app + "/p2p-Gnutella08.embeddings"
-pretrain_emd_filename_g = pretrain_emd_filename_d
-modes = ["dis", "gen"]
-emb_filenames = ["../../pre_train/" + app + "/CA-GrQc_" + modes[0] + "_" + str(random_state) + ".emb",
-                 "../../pre_train/" + app + "/CA-GrQc_" +  modes[1] + "_" + str(random_state) + ".emb"]
-
-n_embed = 50
-n_node = 5242
+# nx.write_edgelist(G, output_filename, data=False)
+# random_state = np.random.randint(0, 100000)
+# pretrain_emd_filename_d = "../../pre_train/" + app + "/p2p-Gnutella08.embeddings"
+# pretrain_emd_filename_g = pretrain_emd_filename_d
+# modes = ["dis", "gen"]
+# emb_filenames = ["../../pre_train/" + app + "/CA-GrQc_" + modes[0] + "_" + str(random_state) + ".emb",
+#                  "../../pre_train/" + app + "/CA-GrQc_" +  modes[1] + "_" + str(random_state) + ".emb"]
+#
+# n_embed = 50
+# n_node = 5242
 # node_embed_init_d = read_emd(filename=pretrain_emd_filename_d, n_node=n_node,
 #                                         n_embed=n_embed)
 # node_embed_init_g = read_emd(filename=pretrain_emd_filename_g, n_node=n_node,
 #                                         n_embed=n_embed)
 # print(node_embed_init_d.shape)
+
+
+train_filename = "../../data/" + app + "/others" + "/CA-GrQc_undirected_train.txt"
+test_filename = "../../data/link_prediction/CA-GrQc_test.txt"
+test_neg_filename = "../../data/link_prediction/CA-GrQc_test_neg.txt"
+
+print('Start counting...')
+
+file = open(train_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('train file size: ', count)
+
+file = open(test_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('train file size: ', count)
+
+file = open(test_neg_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('train file size: ', count)
+
+
+train_filename = "../../data/" + app + "/others" + "/US_largest500_airportnetwork_undirected_train.txt"
+test_filename = "../../data/link_prediction/US_largest500_airportnetwork_test.txt"
+test_neg_filename = "../../data/link_prediction/US_largest500_airportnetwork_test_neg.txt"
+
+print('Start counting...')
+
+file = open(train_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('train file size: ', count)
+
+file = open(test_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('test file size: ', count)
+
+file = open(test_neg_filename)
+count = 0
+for row in file.readlines():
+    count += 1
+print('train file size: ', count)

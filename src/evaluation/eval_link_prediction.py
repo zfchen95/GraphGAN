@@ -34,14 +34,12 @@ class LinkPredictEval(object):
         for i in range(len(test_edges)):
             score_res.append(np.dot(self.emd[test_edges[i][0]], self.emd[test_edges[i][1]]))
         test_label = np.array(score_res)
-        bar = np.median(test_label)  #
+        bar = np.median(test_label)
         ind_pos = test_label >= bar
         ind_neg = test_label < bar
         test_label[ind_pos] = 1
         test_label[ind_neg] = 0
         true_label = np.zeros(test_label.shape)
         true_label[0:len(true_label) // 2] = 1
-		
         accuracy = accuracy_score(true_label, test_label)
-
         return accuracy
