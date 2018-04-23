@@ -11,9 +11,9 @@ save_steps = 10
 lr_dis = 1e-4  # learning rate for discriminator
 lr_gen = 1e-3  # learning rate for discriminator
 
-max_epochs = 20  # outer loop number
-max_epochs_gen = 30  # loop number for generator
-max_epochs_dis = 30  # loop number for discriminator
+max_epochs = 15  # outer loop number
+max_epochs_gen = 15  # loop number for generator
+max_epochs_dis = 15  # loop number for discriminator
 
 gen_for_d_iters = 10  # iteration numbers for generate new data for discriminator
 max_degree = 0  # the max node degree of the network
@@ -25,17 +25,19 @@ gen_update_iter = 200
 window_size = 3
 random_state = np.random.randint(0, 100000)
 app = "link_prediction"
-train_filename = "../../data/" + app + "/others" + "/US_largest500_airportnetwork_undirected_train.txt"
-test_filename = "../../data/link_prediction/US_largest500_airportnetwork_test.txt"
-test_neg_filename = "../../data/link_prediction/US_largest500_airportnetwork_test_neg.txt"
+dataset = "/US_largest500_airportnetwork"
+
+train_filename = "../../data/" + app + "/others" + dataset + "_undirected_train.txt"
+test_filename = "../../data/link_prediction" + dataset + "_test.txt"
+test_neg_filename = "../../data/link_prediction" + dataset + "_test_neg.txt"
 n_embed = 64
 n_node = 500
 # pretrain_emd_filename_d = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
 # pretrain_emd_filename_g = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
-pretrain_emd_filename_d = "../../pre_train/" + app + "/US_largest500_airportnetwork.embeddings"
-pretrain_emd_filename_g = "../../pre_train/" + app + "/US_largest500_airportnetwork.embeddings"
+pretrain_emd_filename_d = "../../pre_train/" + app + dataset + ".emb"
+pretrain_emd_filename_g = "../../pre_train/" + app + dataset + ".emb"
 modes = ["dis", "gen"]
-emb_filenames = ["../../pre_train/" + app + "/US_largest500_airportnetwork_" + modes[0] + "_" + str(random_state) + ".emb",
-                 "../../pre_train/" + app + "/US_largest500_airportnetwork_" + modes[1] + "_" + str(random_state) + ".emb"]
-result_filename = "../../results/" + app + "/US_largest500_airportnetwork_" + str(random_state) + ".txt"
+emb_filenames = ["../../pre_train/" + app + dataset + "_" + modes[0] + "_" + str(random_state) + ".emb",
+                 "../../pre_train/" + app + dataset + "_" + modes[1] + "_" + str(random_state) + ".emb"]
+result_filename = "../../results/" + app + dataset + "_" + str(random_state) + ".txt"
 
