@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="548a6d89-75bd-40f7-8cd5-53c606b36255" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/GraphGAN_github.iml" afterPath="$PROJECT_DIR$/.idea/GraphGAN_github.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="548a6d89-75bd-40f7-8cd5-53c606b36255" name="Default" comment="complete benchmark evaluation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/embedding/GraphGAN_gen/US_largest500_airportnetwork.emb" afterPath="$PROJECT_DIR$/embedding/GraphGAN_gen/US_largest500_airportnetwork.emb" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/config.py" afterPath="$PROJECT_DIR$/src/GraphGAN/config.py" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/generate_neg.py" afterPath="$PROJECT_DIR$/src/generate_neg.py" />
-      <change beforePath="$PROJECT_DIR$/src/eval_benchmark.py" afterPath="$PROJECT_DIR$/src/eval_benchmark.py" />
+      <change beforePath="$PROJECT_DIR$/src/GraphGAN/sample_node.py" afterPath="$PROJECT_DIR$/src/GraphGAN/sample_node.py" />
+      <change beforePath="$PROJECT_DIR$/src/GraphGAN/test.py" afterPath="$PROJECT_DIR$/src/test.py" />
+      <change beforePath="$PROJECT_DIR$/src/generate_neg.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGAN/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGAN/test.py">
+        <entry file="file://$PROJECT_DIR$/src/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="144" column="98" lean-forward="false" selection-start-line="144" selection-start-column="98" selection-end-line="144" selection-end-column="98" />
+            <state relative-caret-position="-899">
+              <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
               <folding>
                 <element signature="e#431#470#0" expanded="false" />
                 <element signature="e#512#655#0" expanded="false" />
@@ -44,69 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discriminator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGAN/discriminator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding>
-                <element signature="e#26#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph_gan.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGAN/graph_gan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="366" column="48" lean-forward="false" selection-start-line="366" selection-start-column="42" selection-end-line="366" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eval_benchmark.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eval_benchmark.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="28" column="92" lean-forward="false" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGAN/generator.py">
+      <file leaf-file-name="read_edges.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/read_edges.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="e#118#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_neg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generate_neg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read_edges.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/read_edges.py">
+      <file leaf-file-name="sample_node.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GraphGAN/sample_node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="98">
+              <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -147,7 +85,6 @@
         <option value="$PROJECT_DIR$/src/GraphGAN/generator_pair.py" />
         <option value="$PROJECT_DIR$/src/GraphGAN/generator.py" />
         <option value="$PROJECT_DIR$/src/GraphGAN/generate_neg.py" />
-        <option value="$PROJECT_DIR$/src/GraphGAN/sample_node.py" />
         <option value="$PROJECT_DIR$/src/GraphGAN/test.py" />
         <option value="$PROJECT_DIR$/src/evaluation/eval_link_prediction.py" />
         <option value="$PROJECT_DIR$/src/evaluation/eval_benchmark.py" />
@@ -156,7 +93,9 @@
         <option value="$PROJECT_DIR$/src/GraphGAN/config.py" />
         <option value="$PROJECT_DIR$/src/eval_benchmark.py" />
         <option value="$PROJECT_DIR$/src/generate_neg.py" />
+        <option value="$PROJECT_DIR$/src/sample_node.py" />
         <option value="$PROJECT_DIR$/src/read_edges.py" />
+        <option value="$PROJECT_DIR$/src/GraphGAN/sample_node.py" />
       </list>
     </option>
   </component>
@@ -209,12 +148,6 @@
               <item name="GraphGAN" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphGAN" type="462c0819:PsiDirectoryNode" />
               <item name="pre_train" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraphGAN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraphGAN" type="462c0819:PsiDirectoryNode" />
-              <item name="pre_train" type="462c0819:PsiDirectoryNode" />
-              <item name="link_prediction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GraphGAN" type="b2602c69:ProjectViewProjectNode" />
@@ -273,8 +206,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/GraphGAN" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.eval_benchmark">
+  <component name="RunManager" selected="Python.sample_node">
     <configuration name="eval_benchmark" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,24 +241,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="generate_neg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/GraphGAN" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="GraphGAN_github" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/generate_neg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="graph_gan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,6 +254,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="GraphGAN_github" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/GraphGAN/graph_gan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="read_edges" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GraphGAN_github" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/read_edges.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,7 +307,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="GraphGAN_github" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/GraphGAN/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,17 +316,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.graph_gan" />
       <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.generate_neg" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sample_node" />
-      <item index="4" class="java.lang.String" itemvalue="Python.eval_benchmark" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sample_node" />
+      <item index="3" class="java.lang.String" itemvalue="Python.eval_benchmark" />
+      <item index="4" class="java.lang.String" itemvalue="Python.read_edges" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.eval_benchmark" />
-        <item index="1" class="java.lang.String" itemvalue="Python.graph_gan" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sample_node" />
-        <item index="4" class="java.lang.String" itemvalue="Python.generate_neg" />
+        <item index="0" class="java.lang.String" itemvalue="Python.sample_node" />
+        <item index="1" class="java.lang.String" itemvalue="Python.read_edges" />
+        <item index="2" class="java.lang.String" itemvalue="Python.eval_benchmark" />
+        <item index="3" class="java.lang.String" itemvalue="Python.graph_gan" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -439,13 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524261911354</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="complete benchmark evaluation">
+      <created>1524497611382</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524497611382</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28235295" sideWeight="0.51111114" order="7" side_tool="true" content_ui="tabs" />
@@ -504,80 +445,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/evaluation/eval_link_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-          <folding>
-            <element signature="e#77#95#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#118#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/graph_gan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/discriminator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#26#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/graph_gan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/evaluation/eval_link_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-          <folding>
-            <element signature="e#77#95#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,7 +498,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,7 +536,7 @@
         <state relative-caret-position="330">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,7 +622,7 @@
         <state relative-caret-position="330">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,7 +670,7 @@
         <state relative-caret-position="330">
           <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,20 +699,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#118#141#0" expanded="true" />
+            <element signature="e#118#141#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/data_preprocessing.py" />
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/sample_node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/evaluation/eval_link_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -856,18 +721,6 @@
           <caret line="13" column="45" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="45" />
           <folding>
             <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="144" column="98" lean-forward="false" selection-start-line="144" selection-start-column="98" selection-end-line="144" selection-end-column="98" />
-          <folding>
-            <element signature="e#431#470#0" expanded="false" />
-            <element signature="e#512#655#0" expanded="false" />
-            <element signature="e#717#2121#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -916,6 +769,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGAN/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGAN/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#118#141#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/eval_benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -926,36 +797,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/generator.py">
+    <entry file="file://$PROJECT_DIR$/src/GraphGAN/CA-HepPh_undirected.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#118#141#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/config.py">
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/others/CA-HepPh.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/others/CA-HepPh.edgelist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/others/CA-HepPh_undirected.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="6293" column="7" lean-forward="false" selection-start-line="6293" selection-start-column="7" selection-end-line="6293" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/others/CA-HepPh_undirected_train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/CA-HepPh_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/link_prediction/CA-HepPh_test_neg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generate_neg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="-22">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-899">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#431#470#0" expanded="false" />
+            <element signature="e#512#655#0" expanded="false" />
+            <element signature="e#717#2121#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/read_edges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGAN/sample_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding />
         </state>
       </provider>
