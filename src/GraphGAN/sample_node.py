@@ -82,14 +82,21 @@ def generate_neg_edges(neg_edges, nodeMap, nodeList):
 
 
 if directed:
+    i = 0
+    nodeMap = {}
     with open(undirected_filename, 'w+') as outF:
         with open(input_filename) as f:
             for row in f.readlines():
                 edge = row.split()
                 if int(edge[0]) < int(edge[1]):
-                    outF.write('%d %d \n' % (int(edge[0]), int(edge[1])))
+                    if edge[0] not in nodeMap:
+                        nodeMap[edge[0]] = i
+                        i += 1
+                    if edge[1] not in nodeMap:
+                        nodeMap[edge[1]] = i
+                        i += 1
+                    outF.write('%d %d \n' % (nodeMap[edge[0]], nodeMap[edge[1]]))
 else:
     generate_edges()
-
 
 

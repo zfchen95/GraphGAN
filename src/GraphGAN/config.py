@@ -11,9 +11,9 @@ save_steps = 10
 lr_dis = 1e-4  # learning rate for discriminator
 lr_gen = 1e-3  # learning rate for discriminator
 
-max_epochs = 15  # outer loop number
-max_epochs_gen = 15  # loop number for generator
-max_epochs_dis = 15  # loop number for discriminator
+max_epochs = 5  # outer loop number
+max_epochs_gen = 5  # loop number for generator
+max_epochs_dis = 5  # loop number for discriminator
 
 gen_for_d_iters = 10  # iteration numbers for generate new data for discriminator
 max_degree = 0  # the max node degree of the network
@@ -25,13 +25,14 @@ gen_update_iter = 200
 window_size = 3
 random_state = np.random.randint(0, 100000)
 app = "link_prediction"
-dataset = "/US_largest500_airportnetwork"
-
+# dataset = "/US_largest500_airportnetwork"
+dataset = "/CA-HepPh"
+# dataset = "/ca-GrQc"
 train_filename = "../../data/" + app + "/others" + dataset + "_undirected_train.txt"
 test_filename = "../../data/link_prediction" + dataset + "_test.txt"
 test_neg_filename = "../../data/link_prediction" + dataset + "_test_neg.txt"
 n_embed = 64
-n_node = 500
+n_node = 12006 # 5241
 # pretrain_emd_filename_d = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
 # pretrain_emd_filename_g = "../../pre_train/" + app + "/CA-GrQc_pre_train.emb"
 pretrain_emd_filename_d = "../../pre_train/" + app + dataset + ".emb"
