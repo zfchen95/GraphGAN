@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="548a6d89-75bd-40f7-8cd5-53c606b36255" name="Default" comment="complete benchmark evaluation">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GraphGAN/plot_acc.py" />
+    <list default="true" id="548a6d89-75bd-40f7-8cd5-53c606b36255" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/link_prediction/CA-GrQc_test.txt" afterPath="$PROJECT_DIR$/data/link_prediction/CA-GrQc_test.txt" />
-      <change beforePath="$PROJECT_DIR$/data/link_prediction/CA-GrQc_test_neg.txt" afterPath="$PROJECT_DIR$/data/link_prediction/CA-GrQc_test_neg.txt" />
-      <change beforePath="$PROJECT_DIR$/data/link_prediction/others/CA-GrQc_undirected_train.txt" afterPath="$PROJECT_DIR$/data/link_prediction/others/CA-GrQc_undirected_train.txt" />
-      <change beforePath="$PROJECT_DIR$/embedding/deepwalk/US_largest500_airportnetwork.emb" afterPath="$PROJECT_DIR$/embedding/deepwalk/US_largest500_airportnetwork.emb" />
-      <change beforePath="$PROJECT_DIR$/embedding/node2vec/US_largest500_airportnetwork.emb" afterPath="$PROJECT_DIR$/embedding/node2vec/US_largest500_airportnetwork.emb" />
-      <change beforePath="$PROJECT_DIR$/embedding/struct2vec/US_largest500_airportnetwork.emb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/config.py" afterPath="$PROJECT_DIR$/src/GraphGAN/config.py" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/generator.py" afterPath="$PROJECT_DIR$/src/GraphGAN/generator.py" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/sample_node.py" afterPath="$PROJECT_DIR$/src/GraphGAN/sample_node.py" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGAN/test.py" afterPath="$PROJECT_DIR$/src/test.py" />
-      <change beforePath="$PROJECT_DIR$/src/eval_benchmark.py" afterPath="$PROJECT_DIR$/src/eval_model.py" />
+      <change beforePath="$PROJECT_DIR$/src/GraphGAN/plot_acc.py" afterPath="$PROJECT_DIR$/src/GraphGAN/plot_acc.py" />
+      <change beforePath="$PROJECT_DIR$/src/eval_model.py" afterPath="$PROJECT_DIR$/src/eval_model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,8 +88,8 @@
       <file leaf-file-name="eval_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="101" column="60" lean-forward="false" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+            <state relative-caret-position="488">
+              <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -110,8 +100,8 @@
       <file leaf-file-name="plot_acc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GraphGAN/plot_acc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="735">
+              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -175,9 +165,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="803" />
+    <option name="width" value="716" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -461,13 +450,28 @@
       <option name="project" value="LOCAL" />
       <updated>1524541458808</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="normal update">
+      <created>1525309185657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1525309185657</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add GraphGAN stats">
+      <created>1525392410825</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525392410825</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28235295" sideWeight="0.51111114" order="7" side_tool="true" content_ui="tabs" />
@@ -518,7 +522,9 @@
     <MESSAGE value="create test" />
     <MESSAGE value="complete benchmark evaluation" />
     <MESSAGE value="complete sample_node.py, sampling training, testing postive, testing negative edges" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete sample_node.py, sampling training, testing postive, testing negative edges" />
+    <MESSAGE value="normal update" />
+    <MESSAGE value="add GraphGAN stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="add GraphGAN stats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGAN/discriminator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -852,6 +850,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/bw/mnt/a/u/training/tra704/FP/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGAN/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -860,20 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/bw/mnt/a/u/training/tra704/FP/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eval_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="101" column="60" lean-forward="false" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+        <state relative-caret-position="488">
+          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -882,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/plot_acc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="735">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

@@ -13,6 +13,8 @@ deepwalk --input example_graphs/US_largest500_airportnetwork.edgelist --output .
 
 deepwalk --input example_graphs/CA-HepPh.edgelist --output ../GraphGAN/embedding/deepwalk/CA-HepPh.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
 
+deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/ca-GrQc/ca-GrQc_128.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
+
 line:
 python line.py --graph_file ca-GrQc --output ca-GrQc --dimensions 64 --proximity first-order 
 
@@ -97,9 +99,13 @@ if __name__ == "__main__":
     conf.emb_filename = 'embedding/%s/' % conf.model
     for filename in os.listdir(conf.emb_filename):
         tmp = filename.replace('.emb', '')
-        emb = int(tmp.split('_')[-1])
-        conf.n_embed = emb
-        conf.emb_filename = 'embedding/%s/%s' % (conf.data, filename)
-        conf.model = tmp
-        eval_test(conf)
+
+        try:
+            emb = int(tmp.split('_')[-1])
+            conf.n_embed = emb
+            conf.emb_filename = 'embedding/%s/%s' % (conf.data, filename)
+            conf.model = tmp
+            eval_test(conf)
+        except ValueError:
+            print(tmp.split('_')[-1])
 
