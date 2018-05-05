@@ -16,7 +16,7 @@ deepwalk --input example_graphs/CA-HepPh.edgelist --output ../GraphGAN/embedding
 deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/ca-GrQc/ca-GrQc_128.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
 
 line:
-python line.py --graph_file ca-GrQc --output ca-GrQc --dimensions 64 --proximity first-order 
+python line.py --graph_file ca-GrQc --output ca-GrQc_second_16 --dimensions 16 --proximity second-order 
 
 python line.py --dimensions 16 --output US_largest500_airportnetwork_first_16 --proximity first-order 
 

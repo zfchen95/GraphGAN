@@ -29,12 +29,16 @@ def plot_emb():
 def plot_emb2():
     deepwalk =[0.639, 0.680, 0.752, 0.784]
     graphGAN = [0.656, 0.723, 0.808, 0.849]
+    line_first = [0.714, 0.707, 0.680, 0.642]
+    line_second = [0.681, 0.716, 0.718, 0.705]
     emb = []
     i = 16
     while i <= 128:
         emb.append(i)
         i *= 2
     plt.semilogx(emb, deepwalk, 'gs-', basex=2, linewidth=1.5, label='deepwalk')
+    plt.semilogx(emb, line_first, 'r^-', basex=2, linewidth=1.5, label='line-1st order')
+    plt.semilogx(emb, line_second, 'bo-', basex=2, linewidth=1.5, label='line-2nd order')
     plt.semilogx(emb, graphGAN, 'mv-', basex=2, linewidth=1.5, label='GraphGAN')
     plt.xlabel('d')
     plt.ylabel('Acc')

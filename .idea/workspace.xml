@@ -88,8 +88,8 @@
       <file leaf-file-name="eval_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eval_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+            <state relative-caret-position="-588">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="104" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -100,8 +100,8 @@
       <file leaf-file-name="plot_acc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GraphGAN/plot_acc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+            <state relative-caret-position="-25">
+              <caret line="40" column="89" lean-forward="false" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -165,8 +165,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="716" />
-    <option name="height" value="900" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -464,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525392410825</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add GraphGAN stats">
+      <created>1525445834434</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1525445834434</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -876,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eval_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        <state relative-caret-position="-588">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="104" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -886,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphGAN/plot_acc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        <state relative-caret-position="-25">
+          <caret line="40" column="89" lean-forward="false" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
