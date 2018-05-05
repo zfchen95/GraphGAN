@@ -67,7 +67,7 @@ def plot_iter():
     plt.ylabel('Acc')
     plt.grid()
     plt.legend()
-    plt.title('CA-GrQc')
+    # plt.title('CA-GrQc GraphGAN')
     # plt.show()
     plt.savefig('CA_GrQc_GraphGAN.png')
 
