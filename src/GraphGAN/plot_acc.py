@@ -72,5 +72,29 @@ def plot_iter():
     plt.savefig('CA_GrQc_GraphGAN.png')
 
 
-plot_emb2()
-# plot_iter()
+def plot_iter2():
+    emb32_dis = [0.614, 0.620, 0.624, 0.624, 0.627, 0.647, 0.667, 0.684, 0.697, 0.711, 0.724]
+    emb32_gen = [0.614, 0.651, 0.681, 0.711, 0.734, 0.765, 0.791, 0.812, 0.825, 0.832, 0.842]
+    emb64_dis = [0.610, 0.617, 0.617, 0.620, 0.634, 0.640, 0.654, 0.664, 0.674, 0.681, 0.694]
+    emb64_gen = [0.610, 0.644, 0.677, 0.704, 0.731, 0.761, 0.775, 0.791, 0.798, 0.805, 0.818]
+    emb128_dis = [0.587, 0.597, 0.607, 0.630, 0.644, 0.671, 0.708, 0.738, 0.761, 0.791, 0.812]
+    emb128_gen = [0.587, 0.657, 0.714, 0.761, 0.802, 0.832, 0.852, 0.869, 0.879, 0.879, 0.885]
+    i = np.arange(0, 11)
+    plt.plot(i, emb32_dis, 'gs--', linewidth=1.5, label='emb32_dis')
+    plt.plot(i, emb32_gen, 'gs-', linewidth=1.5, label='emb32_gen')
+    plt.plot(i, emb64_dis, 'r^--', linewidth=1.5, label='emb64_dis')
+    plt.plot(i, emb64_gen, 'r^-', linewidth=1.5, label='emb64_gen')
+    plt.plot(i, emb128_dis, 'bo--', linewidth=1.5, label='emb128_dis')
+    plt.plot(i, emb128_gen, 'bo-', linewidth=1.5, label='emb128_gen')
+    plt.xlabel('iteration')
+    plt.ylabel('Acc')
+    plt.grid()
+    plt.legend()
+    plt.title('US largest500 airport network')
+    plt.show()
+    # plt.savefig('US_airport_GraphGAN.png')
+
+
+# plot_emb2()
+plot_iter2()
+
