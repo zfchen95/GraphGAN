@@ -7,6 +7,7 @@ def plot_emb():
     line_first = [0.640, 0.708, 0.751, 0.761, 0.775, 0.761]
     line_second = [0.681, 0.644, 0.661, 0.674, 0.691, 0.697]
     graphGAN = [0.664, 0.728, 0.771, 0.791, 0.838, 0.879]
+    node2vec = [0.825, 0.825, 0.838, 0.828, 0.818, 0.838]
     emb = []
     i = 8
     while i <= 256:
@@ -17,13 +18,14 @@ def plot_emb():
     plt.semilogx(emb, line_first, 'r^-', basex=2, linewidth=1.5, label='line-1st order')
     plt.semilogx(emb, line_second, 'bo-', basex=2, linewidth=1.5, label='line-2nd order')
     plt.semilogx(emb, graphGAN, 'mv-', basex=2, linewidth=1.5, label='GraphGAN')
+    plt.semilogx(emb, node2vec, 'yv-', basex=2, linewidth=1.5, label='node2vec')
     plt.xlabel('d')
     plt.ylabel('Acc')
     plt.grid()
     plt.legend()
     plt.title('US largest500 airport network')
-    # plt.show()
-    plt.savefig('US_airport.png')
+    plt.show()
+    # plt.savefig('US_airport.png')
 
 
 def plot_emb2():
@@ -31,6 +33,7 @@ def plot_emb2():
     graphGAN = [0.656, 0.723, 0.808, 0.849]
     line_first = [0.714, 0.707, 0.680, 0.642]
     line_second = [0.681, 0.716, 0.718, 0.705]
+    node2vec = [0.845, 0.851, 0.859, 0.868]
     emb = []
     i = 16
     while i <= 128:
@@ -40,13 +43,14 @@ def plot_emb2():
     plt.semilogx(emb, line_first, 'r^-', basex=2, linewidth=1.5, label='line-1st order')
     plt.semilogx(emb, line_second, 'bo-', basex=2, linewidth=1.5, label='line-2nd order')
     plt.semilogx(emb, graphGAN, 'mv-', basex=2, linewidth=1.5, label='GraphGAN')
+    plt.semilogx(emb, node2vec, 'yv-', basex=2, linewidth=1.5, label='node2vec')
     plt.xlabel('d')
     plt.ylabel('Acc')
     plt.grid()
     plt.legend()
     plt.title('CA-GrQc')
-    # plt.show()
-    plt.savefig('CA_GrQc.png')
+    plt.show()
+    # plt.savefig('CA_GrQc.png')
 
 
 def plot_iter():
@@ -67,7 +71,7 @@ def plot_iter():
     plt.ylabel('Acc')
     plt.grid()
     plt.legend()
-    # plt.title('CA-GrQc GraphGAN')
+    # plt.title('CA-GrQc')
     # plt.show()
     plt.savefig('CA_GrQc_GraphGAN.png')
 
@@ -95,6 +99,7 @@ def plot_iter2():
     # plt.savefig('US_airport_GraphGAN.png')
 
 
-# plot_emb2()
-plot_iter2()
+plot_emb2()
+# plot_iter2()
+
 
