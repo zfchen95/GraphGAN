@@ -99,7 +99,7 @@ def plot_iter2():
     # plt.savefig('US_airport_GraphGAN.png')
 
 
-plot_emb2()
+plot_emb()
 # plot_iter2()
 
 

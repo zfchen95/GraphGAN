@@ -3,38 +3,39 @@ import argparse
 import utils
 import numpy as np
 from sklearn.metrics import f1_score
+
 import os
 
 """
 commands:
-deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/deepwalk/ca-GrQc.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
+deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/deepwalk/ca-GrQc.emb --format edgelist --representation-size 256 --walk-length 80 --window-size 10 --number-walks 10
 
 deepwalk --input example_graphs/US_largest500_airportnetwork.edgelist --output ../GraphGAN/embedding/deepwalk/US_largest500_airportnetwork_256.emb --format edgelist --representation-size 256 --walk-length 80 --window-size 10 --number-walks 10
 
 deepwalk --input example_graphs/CA-HepPh.edgelist --output ../GraphGAN/embedding/deepwalk/CA-HepPh.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
 
-deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/ca-GrQc/ca-GrQc_128.emb --format edgelist --representation-size 128 --walk-length 80 --window-size 10 --number-walks 10
+deepwalk --input example_graphs/ca-GrQc.edgelist --output ../GraphGAN/embedding/ca-GrQc/ca-GrQc_8.emb --format edgelist --representation-size 8 --walk-length 80 --window-size 10 --number-walks 10
 
 line:
-python line.py --graph_file ca-GrQc --output ca-GrQc_second_16 --dimensions 16 --proximity second-order 
+python line.py --graph_file ca-GrQc --output ca-GrQc_second_8 --dimensions 8 --proximity second-order 
 
 python line.py --dimensions 16 --output US_largest500_airportnetwork_first_16 --proximity first-order 
 
 node2vec
 python src/main.py --input graph/ca-GrQc.edgelist --output ../GraphGAN/embedding/node2vec/ca-GrQc.emb --dimensions 128 --window-size 10 --walk-length 80 --num-walks 1
 
-python src/main.py --input graph/US_largest500_airportnetwork.edgelist --output ../GraphGAN/embedding/node2vec/US_largest500_airportnetwork.emb --dimensions 128 --window-size 10 --walk-length 80 --num-walks 10
+python src/main.py --input graph/US_largest500_airportnetwork.edgelist --output ../GraphGAN/embedding/US_largest500_airportnetwork/US_largest500_airportnetwork_p05_q2_128.emb --dimensions 128 --window-size 10 --walk-length 80 --num-walks 10 --p 0.5 --q 2
 
 struc2vec
-python src/main.py --input graph/ca-GrQc.edgelist --output emb/ca-GrQc.emb --dimensions 64 --window-size 5 --walk-length 40 --num-walks 2
+python src/main.py --input graph/ca-GrQc.edgelist --output emb/ca-GrQc.emb --dimensions 128 --window-size 10 --walk-length 80 --num-walks 10 --OPT1 True --OPT2 True --OPT3 True
 
 python graph_gan.py
 
 python src/eval_model.py --app link_prediction --n_embed 128 --data CA-HepPh --n_node 12006 --model deepwalk
 
-python src/eval_model.py --app link_prediction --n_embed 128 --data ca-GrQc --n_node 5241 --model node2vec
+python src/eval_model.py --app link_prediction --n_embed 256 --data ca-GrQc --n_node 5241 --model node2vec
 
-python src/eval_model.py --app link_prediction --n_embed 128 --data US_largest500_airportnetwork --n_node 500 --model node2vec
+python src/eval_model.py --app link_prediction --n_embed 256 --data US_largest500_airportnetwork --n_node 500 --model node2vec
 """
 
 
@@ -91,21 +92,31 @@ def parse_args():
 
 if __name__ == "__main__":
     conf = parse_args()
+
+    # conf.data = 'ca-GrQc'
+    # conf.data = 'CA-HepPh'
+    conf.emb_filename = 'embedding/%s/%s_%d.emb' % (conf.model, conf.data, conf.n_embed)
+    conf.model = '%s_%d' % (conf.data, conf.n_embed)
+    emb = int(conf.model.split('_')[-1])
+    conf.n_embed = emb
+
     conf.test_filename = 'data/%s/%s_test.txt' % (conf.app, conf.data)
     conf.test_neg_filename = 'data/%s/%s_test_neg.txt' % (conf.app, conf.data)
     conf.result_filename = 'results/%s/%s_accuracy.txt' % (conf.app, conf.data)
     conf.result_filename_f1 = 'results/%s/%s_macrof1.txt' % (conf.app, conf.data)
 
-    conf.emb_filename = 'embedding/%s/' % conf.model
-    for filename in os.listdir(conf.emb_filename):
-        tmp = filename.replace('.emb', '')
+    eval_test(conf)
 
-        try:
-            emb = int(tmp.split('_')[-1])
-            conf.n_embed = emb
-            conf.emb_filename = 'embedding/%s/%s' % (conf.data, filename)
-            conf.model = tmp
-            eval_test(conf)
-        except ValueError:
-            print(tmp.split('_')[-1])
-
+    # conf.emb_filename = 'embedding/%s/' % conf.model
+    #
+    # for filename in os.listdir(conf.emb_filename):
+    #     tmp = filename.replace('.emb', '')
+    #
+    #     try:
+    #         emb = int(tmp.split('_')[-1])
+    #         conf.n_embed = emb
+    #         conf.emb_filename = 'embedding/%s/%s' % (conf.data, filename)
+    #         conf.model = tmp
+    #         eval_test(conf)
+    #     except ValueError:
+    #         print(tmp.split('_')[-1])
